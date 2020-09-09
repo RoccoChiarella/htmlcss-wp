@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+    background-image: url('https://organicthemes.com/demo/natural-lite/wp-content/themes/natural-lite/images/default-pattern.png');
+}
+
+#wrapper{
+    width: 1200px;
+    margin: auto;
+}
+
 .container::after{
     content: '';
     display: table;
@@ -28,7 +38,7 @@ header{
     float: left;
     height: 500px;
     width: calc(33% - 30px);
-    background-color: purple;
+    background-color: purple;\
     margin-left: 15px;
     margin-right: 15px;
 }
