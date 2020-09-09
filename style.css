@@ -76,7 +76,6 @@ nav a.dropdown-item::after{
 aside{
     float: left;
     width: 20%;
-    height: 100px;
 }
 
 .box{
@@ -110,10 +109,41 @@ aside{
     box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 }
 
+.search::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.search-input{
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.04);
+    color: #999999;
+    margin-right: 10px;
+    padding: 10px;
+    float: left;
+    width: calc(75% - 10px);
+}
+
+.search-button{
+    background-color: #504741;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    padding: 10px;
+    float: left;
+    width: 25%;
+}
+
+.search-button:hover{
+    background-color: #302B27;
+}
+
 main{
     background-color: purple;
     float: left;
     width: calc(60% - 20px);
+    height: 500px;
     margin-left: 10px;
     margin-right: 10px;
 }
