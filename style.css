@@ -23,13 +23,13 @@ header{
     color: white;
 }
 
-h1{
+#titolo{
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 40px;
 }
 
-h2{
+#sottotitolo{
     font-weight: normal;
     font-size: 20px;
 }
@@ -146,6 +146,52 @@ main{
     height: 500px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.titolo-post{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, .1);
+    line-height: 1.1;
+    letter-spacing: -1.4px;
+    margin: 0px 0px 12px 0px;
+    padding: 0px;
+}
+
+.post-container a{
+    text-decoration: none;
+    color: #99cc33;
+    display: inline;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+.post-container a:hover{
+    color: #669900;
+    text-decoration: underline;
+}
+
+.post-calendars{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.post-calendars::before{
+    content: "\f073";
+}
+
+.post-comments::before{
+    content: "\f075";
+}
+
+.post-container img{
+    border: none;
+    height: auto;
+    margin: 0px auto 0px;
+    max-width: 100%;
 }
 
 footer{
